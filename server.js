@@ -1,5 +1,4 @@
 const express = require('express');
-const mongojs = require("mongojs");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 
@@ -19,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-    PROCESS.ENV.MONGODB_URI || 'mongodb://localhost/workout',
+    process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -28,8 +27,8 @@ mongoose.connect(
     }
 );
 
-require('./routes/api-routes')(app);
-require('./routes/html-ruotes')(app);
+require('./controllers/api/workout-routes')(app);
+require('./controllers/html-routes')(app);
 
 app.listen(PORT, () => {
     console.log(`App running at http://localhost:${PORT}`);
