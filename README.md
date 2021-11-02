@@ -20,6 +20,9 @@
 
   ## Usage
   Upon entering the page the user can add 2 different types of workouts, either Cardio, or Resistance. If resistance is selected, the user can then enter information like the name of the exercise, the weight lifted, number of sets, repetitions, and the duration of the exercise. If cardio is selected the user can enter information such as the exercise name, distance, and duration. Once entered, the user can click to add the exercise and continue adding more, or to complete the exercise which will take the user back to the main page with some info about the last workout. If the user would like to see their progress, they can click the dashboard link at the top of the page to see graphs of their time put in along with the other info they have entered in easy to understand graphs for the past 7 days. 
+  
+  ![Screenshot (155)](https://user-images.githubusercontent.com/82903685/139779611-a198ec17-8366-426e-b2f0-03cf333d76bc.png)
+
 
   ## License
  
